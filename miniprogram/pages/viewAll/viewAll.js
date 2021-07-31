@@ -87,6 +87,14 @@ Page({
       nowSurvey:this.data.allSurvey.slice((this.data.ptr+1)*4,(this.data.ptr+1)*4 + 4)
     })
   },
+  viewIt:function (e) {
+    // console.log(1)
+    console.log(e.currentTarget.dataset.lct)
+    let sv = JSON.stringify(this.data.nowSurvey[e.currentTarget.dataset.lct])
+    wx.navigateTo({
+      url: '../doSurvey/doSurvey?sv=' + sv,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -105,6 +113,7 @@ Page({
     .catch(console.error)
     
   },
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

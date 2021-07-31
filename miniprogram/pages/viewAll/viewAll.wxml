@@ -5,7 +5,7 @@
         
     </view>
     <view class="content">
-    <view class="div" wx:for="{{nowSurvey}}" style="display:{{hotDisplay}}">
+    <view class="div" wx:for="{{nowSurvey}}" style="display:{{hotDisplay}}" data-lct="{{index}}" bindtap="viewIt">
         <image src="../../img/survey.png" style="height:80rpx;width:80rpx;margin-top:30rpx"/>
     <view class="title">{{item.title}}</view>
     <view style="display:flex;margin-top:30rpx">
@@ -20,22 +20,7 @@
         </view>
     </view>
     </view>
-    <!-- 两块区域分界 -->
-    <view class="div" wx:for="{{newSurvey}}" style="display:{{hotDisplay}}">
-        <image src="../../img/survey.png" style="height:80rpx;width:80rpx;margin-top:30rpx"/>
-    <view class="title">{{item.title}}</view>
-    <view style="display:flex;margin-top:30rpx">
-        <view style="display:flex;flex-wrap:no-wrap">
-        <image src="../../img/alert.png" style="height:30rpx;width:30rpx"/>
-        {{item.result}}
-        </view>
-        <view>
-        <image src="../../img/like.png"
-        style="height:30rpx;width:30rpx;margin-left:30rpx"/>
-        {{item.likes}}
-        </view>
-    </view>
-    </view>
+   
 
 
     </view>
