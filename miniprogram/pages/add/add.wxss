@@ -1,0 +1,25 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task{
+    border: 3px #D9E5FA solid;
+    color:#47476b;
+    border-radius: 10px;
+    width: 650rpx;
+    height: 300rpx;
+    margin-bottom: 100rpx;
+}
+.content{
+    text-align: center;
+    margin-top: 60rpx;
+    
+}
+.enter{
+    height:80rpx;
+    width:80rpx;
+    position: relative;
+    left: 560rpx;
+    top:50rpx
+}

@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/help/help",
+    "pages/index/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/deployService/index",
+    "pages/createCollection/index",
+    "pages/uploadFile/index",
+    "pages/selectRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index",
+    "pages/test/test",
+    "pages/viewAll/viewAll",
+    "pages/add/add",
+    "pages/mine/mine",
+    "pages/home/home",
+    "pages/newSurvey/newSurvey"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "大学生问卷互填系统",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar":{
+    "color" : "#999999",
+    "selectedColor":"1AAD19",
+    "borderStyle":"white",
+    "backgroundColor":"#fff",
+    "list":[
+        {
+            "pagePath":"pages/help/help",
+            "text": "用户须知",
+            "iconPath": "img/info.png",
+            "selectedIconPath": "/img/info-selected.png"
+        },
+        {
+            "pagePath":"pages/viewAll/viewAll",
+            "text": "问卷",
+            "iconPath": "img/star.png",
+            "selectedIconPath": "/img/star-selected.png"
+        },
+        {
+            "pagePath":"pages/add/add",
+            "text": "发布",
+            "iconPath": "img/add.png",
+            "selectedIconPath": "/img/add-selected.png"
+        },
+        {
+            "pagePath":"pages/mine/mine",
+            "text": "我的",
+            "iconPath": "img/book.png",
+            "selectedIconPath": "/img/book-selected.png"
+        },
+        {
+            "pagePath":"pages/home/home",
+            "text": "主页",
+            "iconPath": "img/home.png",
+            "selectedIconPath": "/img/home-selected.png"
+        }
+        
+    ]
+  }
+}

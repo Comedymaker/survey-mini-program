@@ -1,0 +1,18 @@
+<view class="page">
+<view class="task"> 
+    
+   
+        <image src="../../img/pencil.png" style="height:50rpx;width:50rpx;margin-right:10rpx"/>
+        <text >新建问卷</text>
+    
+    <view class="content">创建一个新的问卷</view>
+    <image src="../../img/arrow.png" class="enter" bindtap="addNew"/>
+</view>
+
+<view class="task">
+    <image src="../../img/post.png" style="height:50rpx;width:50rpx;margin-right:10rpx"/>
+    <text >发布问卷</text>
+    <view class="content">创建一个新的问卷</view>
+    <image src="../../img/arrow.png" class="enter" bindtap="postOne"/>
+</view>
+</view>

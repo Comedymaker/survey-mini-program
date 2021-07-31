@@ -1,0 +1,19 @@
+page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.headimg{
+    height: 100rpx;
+    width: 100rpx;
+}
+.logIn{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color:#47476b;
+    width: 680rpx;
+    background-color: white;
+    padding: 10rpx 20rpx;
+}

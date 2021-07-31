@@ -1,0 +1,12 @@
+<view class="page">
+<view class="title">
+    用户须知
+</view>
+
+<view class="container">
+<text>1. 问卷研究群体须是大学生群体，保证问卷结果的有效性\n\n</text>
+<text>2. 问卷的发布者需要保证问卷设置的科学性与严谨性\n\n</text>
+<text>3. 问卷的内容应当符合法律法规，不应出现不当内容\n\n</text>
+<text>4. 在使用过程中用户应当遵守诚信原则\n</text>
+</view>
+</view>

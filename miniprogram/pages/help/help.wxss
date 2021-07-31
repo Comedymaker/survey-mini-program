@@ -1,0 +1,17 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 26px;
+}
+.container{
+    border: 3px #D9E5FA solid;
+    color:#47476b;
+    border-radius: 10px;
+    width: 650rpx;
+    height: 800rpx;
+    margin-bottom: 100rpx;
+    padding: 40rpx 20rpx;
+}

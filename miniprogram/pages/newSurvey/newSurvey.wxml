@@ -1,0 +1,42 @@
+<input placeholder="标题" class="title" bindinput="addTitle"/>
+<input placeholder="描述（选填)" class="describe" bindinput="addDescription"/>
+<view style="width:100%;background-color:white;margin-bottom:50rpx;padding-left:40rpx">
+<image src="../../img/photo.png" class="photo"/>
+<text style="color:#808080;font-size:12px">\n图片（选填）</text>
+</view>
+<text style="color:#808080;font-size:12px;margin-left:20rpx">问题设置</text>
+<view class="question" wx:for="{{allQuestion}}" wx:key="id" wx:for-index="orderNum">
+    <picker data-hi="{{orderNum}}" bindchange="bindPickerChange" mode="selector" value="{{order}}" range="{{sinOrDou}}" >
+        <view class="line">问题{{orderNum+1}}: 
+        <text style="margin-left:450rpx">{{sinOrDou[order[orderNum]]}} ></text>
+        </view>
+    </picker>
+    <view class="line" style="display:flex;align-items:center">
+    <text>标题</text>
+    <input data-hi="{{orderNum}}" placeholder="请输入标题" style="margin-left:40rpx" bindinput="addQContent"/>
+    
+    </view>
+    <view class="line" style="display:flex;align-items:center"
+    wx:for="{{item.allAnswer}}" wx:key="unique">
+    <image data-hi="{{orderNum+'&'+index}}" src="../../img/delQ.png" style="height:37rpx;width:37rpx;margin-right:40rpx" bindtap="delAnswer"/>
+    <input placeholder="请输入第{{index+1}}项（30字以内）" data-hi="{{orderNum+'&'+index}}" bindinput="addAnswer"/>
+    </view>
+    <view id="{{orderNum}}" class="line" bindtap="addToArray" style="display:flex;align-items:center">
+    <image src="../../img/newQ.png" style="height:40rpx;width:40rpx;margin-right:40rpx"/>
+    <text style="color:#1296DB">添加选项（最多100项）</text>
+    </view>
+    <view class="line">
+      <view style="text-align:right;margin-right:40rpx">必填<checkbox value="must"/></view>
+    </view>
+</view>
+<view class="addQuestion" bindtap="addQuestion">
+  + 添加问题 （最多50项）
+</view>
+<text style="color:#808080;font-size:12px;margin-left:20rpx">高级设置</text>
+<picker  mode="date" style="background-color:white" value="{{time}}" bindchange="bindTimeChange">
+        <view class="line">截止时间: 
+        <text >{{time}}</text>
+        </view>
+    </picker>
+
+<view class="addQuestion" style="padding: 20rpx 0rpx;color:white;font-weight:800" bindtap="pushData">提交</view>

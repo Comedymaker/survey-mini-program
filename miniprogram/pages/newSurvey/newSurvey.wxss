@@ -1,0 +1,43 @@
+page{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.title{
+  width: 100%;
+  height: 40rpx;
+  background-color: white;
+  padding: 50rpx 20rpx;
+  border-bottom: 2px #f6f6f6 solid;
+}
+.describe{
+    width: 100%;
+    height: 40rpx;
+    background-color: white;
+    padding: 50rpx 20rpx;
+    border-bottom: 2px #f6f6f6 solid;
+}
+.photo{
+  height: 150rpx;
+  width: 150rpx;
+  margin-top: 40rpx;
+}
+.question{
+  background-color: white;
+}
+.line{
+    width: 100%;
+    padding: 20rpx 20rpx;
+    border-bottom: 2px #f6f6f6 solid;
+}
+.addQuestion{
+  border: 1px #8585ad solid;
+  border-radius: 2px;
+  width: 450rpx;
+  text-align: center;
+  align-self: center;
+  margin: 40rpx auto;
+  background-color:#1296DB;
+  color: white;
+}

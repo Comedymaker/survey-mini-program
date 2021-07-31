@@ -1,0 +1,5 @@
+
+    <view class="logIn">
+        <image src="../../img/headImg.png" class="headimg"/>
+        <view style="margin-left: 50rpx;font-size:12px" bindtap="accountLogIn">点击登录</view>
+    </view>
